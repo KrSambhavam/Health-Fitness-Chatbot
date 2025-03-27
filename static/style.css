@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background: linear-gradient(to right, rgba(116, 235, 213, 0.7), rgba(172, 182, 229, 0.7)), 
+                url('health.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-style: bold;
+    color: #002b5e;
+    margin-top: -10px;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 43, 94, 0.3); 
+}
+
+
+
+
+
+
+@keyframes glowingBorder {
+    0% { box-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff; }
+    50% { box-shadow: 0 0 15px #3399ff, 0 0 30px #3399ff; }
+    100% { box-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff; }
+}
+
+#chatbox {
+    width: 60%;
+    height: 400px;
+    overflow-y: scroll;
+    padding: 10px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(0, 170, 255, 0.6);
+    box-shadow: 0 0 10px #00aaff;
+    animation: glowingBorder 2s infinite alternate;
+}
+
+
+
+.message {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 8px;
+    width: fit-content;
+    max-width: 80%;
+    word-wrap: break-word;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bot-message {
+    background-color: #e6f2ff;
+    border-left: 5px solid #007bff;
+    text-align: left;
+}
+
+.user-message {
+    background-color: #d4edda;
+    border-right: 5px solid #28a745;
+    text-align: right;
+    margin-left: auto;
+}
+
+@keyframes glowingBorder {
+    0% { box-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff; }
+    50% { box-shadow: 0 0 15px #3399ff, 0 0 30px #3399ff; }
+    100% { box-shadow: 0 0 10px #00aaff, 0 0 20px #00aaff; }
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+input {
+    width: 50%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    font-size: 16px;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(0, 170, 255, 0.6);
+    animation: glowingBorder 2s infinite alternate;
+    box-shadow: 0 0 10px #00aaff;
+    transition: 0.3s;
+}
+
+button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid rgba(0, 170, 255, 0.6);
+    animation: glowingBorder 2s infinite alternate;
+    box-shadow: 0 0 10px #00aaff;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.chatbot-logo {
+    width: 60px; 
+    height: auto;
+    border-radius: 15px;
+    margin-right: 10px; 
+}
+
+.chatbot-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #002b5e;
+    letter-spacing: 1px;
+}
